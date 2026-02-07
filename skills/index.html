@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>全部技能 - OpenClaw Skills Hub</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="canonical" href="https://xpfasd.github.io/openclaw-site/skills/">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="/" class="logo">
+          <span class="logo-icon">🦞</span>
+          <span>OpenClaw Skills Hub</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="/">首页</a></li>
+          <li><a href="/skills/" class="active">全部技能</a></li>
+          <li><a href="/categories/">分类</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="skills-page">
+    <div class="container">
+      <h1>📚 全部技能</h1>
+      <p class="page-desc">共 <span id="total-skills">53</span> 个技能</p>
+
+      <!-- Search & Filter -->
+      <div class="filter-bar">
+        <input type="search" id="skill-search" placeholder="搜索技能..." class="search-input">
+        <select id="category-filter" class="filter-select">
+    <option value="">所有分类</option>
+    <option value="ai-ml">AI & 机器学习</option><option value="media">媒体处理</option><option value="productivity">效率工具</option><option value="communication">通讯社交</option><option value="development">开发工具</option><option value="multimedia">多媒体娱乐</option><option value="iot">智能家居</option><option value="utilities">实用工具</option>
+  
+          <option value="">所有分类</option>
+        </select>
+        <select id="sort-filter" class="filter-select">
+          <option value="name">按名称排序</option>
+          <option value="updated">按更新时间</option>
+        </select>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="skills-grid-large" id="skills-grid">
+        
+      <a href="/skills/nano-banana-pro/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">🍌</span>
+          <h3>Nano Banana Pro</h3>
+        </div>
+        <p>Advanced AI prompts and generation tools</p>
+        <div class="skill-tags">
+          <span class="tag">AI & 机器学习</span>
+        </div>
+      </a>
+    
+      <a href="/skills/gemini/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">✨</span>
+          <h3>Gemini CLI</h3>
+        </div>
+        <p>Gemini CLI for one-shot Q&A, summaries, and generation</p>
+        <div class="skill-tags">
+          <span class="tag">AI & 机器学习</span>
+        </div>
+      </a>
+    
+      <a href="/skills/coding-agent/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">💻</span>
+          <h3>Coding Agent</h3>
+        </div>
+        <p>Run Codex CLI, Claude Code, OpenCode via background process</p>
+        <div class="skill-tags">
+          <span class="tag">AI & 机器学习</span>
+        </div>
+      </a>
+    
+      <a href="/skills/canvas/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">🎨</span>
+          <h3>Canvas</h3>
+        </div>
+        <p>Control node canvases (present/hide/navigate/eval/snapshot)</p>
+        <div class="skill-tags">
+          <span class="tag">媒体处理</span>
+        </div>
+      </a>
+    
+      <a href="/skills/openai-image-gen/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">🖼️</span>
+          <h3>OpenAI Image Gen</h3>
+        </div>
+        <p>Generate images using OpenAI's image generation API</p>
+        <div class="skill-tags">
+          <span class="tag">媒体处理</span>
+        </div>
+      </a>
+    
+      <a href="/skills/openai-whisper/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">🎙️</span>
+          <h3>OpenAI Whisper</h3>
+        </div>
+        <p>Speech-to-text transcription using Whisper</p>
+        <div class="skill-tags">
+          <span class="tag">媒体处理</span>
+        </div>
+      </a>
+    
+      <a href="/skills/video-frames/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">🎬</span>
+          <h3>Video Frames</h3>
+        </div>
+        <p>Extract frames from video files</p>
+        <div class="skill-tags">
+          <span class="tag">媒体处理</span>
+        </div>
+      </a>
+    
+      <a href="/skills/notion/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">📒</span>
+          <h3>Notion</h3>
+        </div>
+        <p>Read and write to Notion pages</p>
+        <div class="skill-tags">
+          <span class="tag">效率工具</span>
+        </div>
+      </a>
+    
+      <a href="/skills/obsidian/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">📔</span>
+          <h3>Obsidian</h3>
+        </div>
+        <p>Read and manage Obsidian vault</p>
+        <div class="skill-tags">
+          <span class="tag">效率工具</span>
+        </div>
+      </a>
+    
+      <a href="/skills/apple-notes/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">📝</span>
+          <h3>Apple Notes</h3>
+        </div>
+        <p>Read and manage Apple Notes</p>
+        <div class="skill-tags">
+          <span class="tag">效率工具</span>
+        </div>
+      </a>
+    
+      <a href="/skills/things-mac/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">✅</span>
+          <h3>Things Mac</h3>
+        </div>
+        <p>Manage tasks in Things 3</p>
+        <div class="skill-tags">
+          <span class="tag">效率工具</span>
+        </div>
+      </a>
+    
+      <a href="/skills/discord/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">💬</span>
+          <h3>Discord</h3>
+        </div>
+        <p>Send messages and manage Discord channels</p>
+        <div class="skill-tags">
+          <span class="tag">通讯社交</span>
+        </div>
+      </a>
+    
+      <a href="/skills/slack/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">📱</span>
+          <h3>Slack</h3>
+        </div>
+        <p>Send messages to Slack channels</p>
+        <div class="skill-tags">
+          <span class="tag">通讯社交</span>
+        </div>
+      </a>
+    
+      <a href="/skills/imsg/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">💭</span>
+          <h3>iMessage</h3>
+        </div>
+        <p>Send iMessages via macOS</p>
+        <div class="skill-tags">
+          <span class="tag">通讯社交</span>
+        </div>
+      </a>
+    
+      <a href="/skills/bird/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">🐦</span>
+          <h3>Bird</h3>
+        </div>
+        <p>Twitter/X client</p>
+        <div class="skill-tags">
+          <span class="tag">通讯社交</span>
+        </div>
+      </a>
+    
+      <a href="/skills/github/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">🐙</span>
+          <h3>GitHub</h3>
+        </div>
+        <p>Interact with GitHub using gh CLI</p>
+        <div class="skill-tags">
+          <span class="tag">开发工具</span>
+        </div>
+      </a>
+    
+      <a href="/skills/tmux/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">🖥️</span>
+          <h3>Tmux</h3>
+        </div>
+        <p>Control tmux sessions</p>
+        <div class="skill-tags">
+          <span class="tag">开发工具</span>
+        </div>
+      </a>
+    
+      <a href="/skills/skill-creator/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">🛠️</span>
+          <h3>Skill Creator</h3>
+        </div>
+        <p>Create or update AgentSkills</p>
+        <div class="skill-tags">
+          <span class="tag">开发工具</span>
+        </div>
+      </a>
+    
+      <a href="/skills/spotify-player/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">🎵</span>
+          <h3>Spotify Player</h3>
+        </div>
+        <p>Control Spotify playback</p>
+        <div class="skill-tags">
+          <span class="tag">多媒体娱乐</span>
+        </div>
+      </a>
+    
+      <a href="/skills/songsee/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">🎶</span>
+          <h3>SongSee</h3>
+        </div>
+        <p>Song recognition and lyrics</p>
+        <div class="skill-tags">
+          <span class="tag">多媒体娱乐</span>
+        </div>
+      </a>
+    
+      <a href="/skills/gifgrep/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon"> GIF</span>
+          <h3>Gifgrep</h3>
+        </div>
+        <p>Search and share GIFs</p>
+        <div class="skill-tags">
+          <span class="tag">多媒体娱乐</span>
+        </div>
+      </a>
+    
+      <a href="/skills/openhue/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">💡</span>
+          <h3>OpenHue</h3>
+        </div>
+        <p>Control Philips Hue lights</p>
+        <div class="skill-tags">
+          <span class="tag">智能家居</span>
+        </div>
+      </a>
+    
+      <a href="/skills/goplaces/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">📍</span>
+          <h3>Go Places</h3>
+        </div>
+        <p>Local places search</p>
+        <div class="skill-tags">
+          <span class="tag">智能家居</span>
+        </div>
+      </a>
+    
+      <a href="/skills/weather/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">🌤️</span>
+          <h3>Weather</h3>
+        </div>
+        <p>Get current weather and forecasts</p>
+        <div class="skill-tags">
+          <span class="tag">实用工具</span>
+        </div>
+      </a>
+    
+      <a href="/skills/healthcheck/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">🏥</span>
+          <h3>Healthcheck</h3>
+        </div>
+        <p>Host security hardening and risk assessment</p>
+        <div class="skill-tags">
+          <span class="tag">实用工具</span>
+        </div>
+      </a>
+    
+      <a href="/skills/summarize/" class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">📝</span>
+          <h3>Summarize</h3>
+        </div>
+        <p>Summarize text content</p>
+        <div class="skill-tags">
+          <span class="tag">实用工具</span>
+        </div>
+      </a>
+    
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination" id="pagination">
+        <!-- Pagination loaded dynamically -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>🤖 OpenClaw Skills Hub | <a href="https://github.com/xpfasd/openclaw-collector">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/data.js"></script>
+  <script src="/assets/js/skills.js"></script>
+</body>
+</html>
