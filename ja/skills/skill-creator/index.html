@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Creator - OpenClaw Skills Hub</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="canonical" href="https://xpfasd.github.io/openclaw-site/skills/skill-creator/">
+  <meta property="og:title" content="Skill Creator - OpenClaw Skills Hub">
+  <meta property="og:description" content="Create or update AgentSkills">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      
+    <nav class="nav">
+      <a href="/ja/" class="logo">
+        <span class="logo-icon">🦞</span>
+        <span>OpenClaw Skills Hub</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/ja/" class="active">ホーム</a></li>
+        <li><a href="/ja/skills/">スキル</a></li>
+        <li><a href="/ja/categories/">カテゴリー</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-switcher">
+          <button class="lang-switcher-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span>JA</span>
+          </button>
+          <div class="lang-dropdown">
+            <a href="/" class="">English</a><a href="/zh/" class="">中文</a><a href="/es/" class="">Español</a><a href="/ja/" class="lang-active">日本語</a><a href="/ko/" class="">한국어</a>
+          </div>
+        </div>
+        <input type="search" id="search" placeholder="スキルを検索..." class="search-box">
+      </div>
+    </nav>
+  
+    </div>
+  </header>
+
+  <main class="skill-detail">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb">
+        <a href="/">首页</a>
+        <span class="separator">/</span>
+        <a href="/skills/">全部技能</a>
+        <span class="separator">/</span>
+        <span class="current">Skill Creator</span>
+      </nav>
+      
+      <!-- Skill Header -->
+      <div class="skill-header">
+        <div class="skill-icon-wrapper">
+          <span class="skill-icon">🛠️</span>
+          <span class="skill-icon-glow"></span>
+        </div>
+        <div class="skill-info">
+          <h1>Skill Creator</h1>
+          <p class="skill-description">Create or update AgentSkills</p>
+          <div class="skill-meta">
+            <span class="category-tag">開発</span>
+            <span class="status-tag">
+              <span class="status-dot"></span>
+              ✅ Active
+            </span>
+            <span class="version-tag">v1.0.0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Action -->
+      <div class="quick-action">
+        <a href="https://github.com/openclaw/openclaw/tree/main/skills/skill-creator" target="_blank" class="action-btn primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          查看官方文档
+        </a>
+        <button class="action-btn secondary" onclick="copyPath('/opt/homebrew/lib/node_modules/openclaw/skills/skill-creator/')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          复制路径
+        </button>
+      </div>
+
+      <div class="skill-content">
+        <div class="skill-main">
+          <!-- Usage Section -->
+          <section class="content-section usage-section">
+            <div class="section-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              <h2>使用方法</h2>
+            </div>
+            <div class="usage-content">
+              Build custom skills for OpenClaw
+            </div>
+          </section>
+
+          <!-- Examples Section -->
+          <section class="content-section examples-section">
+            <div class="section-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+              <h2>使用示例</h2>
+            </div>
+            <div class="examples-list">
+              
+    <div class="example-item"><p>Create new skill from template</p></div>
+  
+    <div class="example-item"><p>Package skills with assets</p></div>
+  
+    <div class="example-item"><p>Update existing skills</p></div>
+  
+            </div>
+          </section>
+        </div>
+
+        <aside class="skill-sidebar">
+          <!-- Info Card -->
+          <div class="sidebar-card info-card">
+            <div class="card-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              <h3>快速信息</h3>
+            </div>
+            <ul class="info-list">
+              <li class="info-item">
+                <span class="info-label">类型</span>
+                <span class="info-value">OpenClaw Skill</span>
+              </li>
+              <li class="info-item">
+                <span class="info-label">版本</span>
+                <span class="info-value">1.0.0</span>
+              </li>
+              <li class="info-item">
+                <span class="info-label">路径</span>
+                <code class="info-code">/opt/homebrew/lib/node_modules/openclaw/skills/skill-creator/</code>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Related Skills -->
+          <div class="sidebar-card related-card">
+            <div class="card-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              <h3>相关技能</h3>
+            </div>
+            <ul class="related-list">
+              <li><a href="/ja/skills/github/">GitHub</a></li><li><a href="/ja/skills/tmux/">Tmux</a></li>
+            </ul>
+          </div>
+
+          <!-- Actions Card -->
+          <div class="sidebar-card actions-card">
+            <a href="https://github.com/openclaw/openclaw/tree/main/skills/skill-creator" target="_blank" class="sidebar-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              查看官方文档
+            </a>
+            <a href="/categories/#{{categoryId}}" class="sidebar-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              同类技能
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>🤖 OpenClaw Skills Hub | <a href="https://github.com/xpfasd/openclaw-collector">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script>
+    function copyPath(path) {
+      navigator.clipboard.writeText(path).then(() => {
+        const btn = event.target.closest('.action-btn');
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 已复制!';
+        setTimeout(() => btn.innerHTML = originalText, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

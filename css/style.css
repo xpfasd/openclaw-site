@@ -123,6 +123,83 @@ a:hover { color: white; }
   box-shadow: 0 0 0 3px var(--glow);
 }
 
+/* Language Switcher */
+.lang-switcher {
+  position: relative;
+  display: inline-block;
+}
+
+.lang-switcher-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.lang-switcher-btn:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.lang-switcher-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 4px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: all var(--transition);
+  z-index: 1000;
+  min-width: 140px;
+}
+
+.lang-switcher:hover .lang-dropdown,
+.lang-switcher:focus-within .lang-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.lang-dropdown a {
+  display: block;
+  padding: 10px 14px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  transition: all var(--transition);
+  border-bottom: 1px solid var(--border);
+}
+
+.lang-dropdown a:last-child {
+  border-bottom: none;
+}
+
+.lang-dropdown a:hover {
+  background: var(--surface-hover);
+  color: var(--accent-light);
+}
+
+.lang-dropdown a.lang-active {
+  color: var(--accent-light);
+  background: var(--glow);
+}
+
 /* Hero */
 .hero {
   padding: 90px 0;
@@ -1089,6 +1166,60 @@ section h2 {
 .updates-list {
   max-width: 700px;
   margin: 0 auto;
+}
+
+/* Quick Start Section */
+.quickstart-section {
+  padding: 50px 0;
+  background: var(--bg-secondary);
+}
+
+.quickstart-section h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.quickstart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.quickstart-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  text-align: center;
+  transition: all var(--transition);
+}
+
+.quickstart-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px var(--glow);
+}
+
+.qs-icon {
+  font-size: 2.5rem;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.quickstart-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.quickstart-card p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
 }
 
 .update-item {

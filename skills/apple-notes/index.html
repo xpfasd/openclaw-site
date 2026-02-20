@@ -12,17 +12,34 @@
 <body>
   <header class="header">
     <div class="container">
-      <nav class="nav">
-        <a href="/" class="logo">
-          <span class="logo-icon">🦞</span>
-          <span>OpenClaw Skills Hub</span>
-        </a>
-        <ul class="nav-links">
-          <li><a href="/">首页</a></li>
-          <li><a href="/skills/" class="active">全部技能</a></li>
-          <li><a href="/categories/">分类</a></li>
-        </ul>
-      </nav>
+      
+    <nav class="nav">
+      <a href="/" class="logo">
+        <span class="logo-icon">🦞</span>
+        <span>OpenClaw Skills Hub</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="/skills/">Skills</a></li>
+        <li><a href="/categories/">Categories</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-switcher">
+          <button class="lang-switcher-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span>EN</span>
+          </button>
+          <div class="lang-dropdown">
+            <a href="/" class="lang-active">English</a><a href="/zh/" class="">中文</a><a href="/es/" class="">Español</a><a href="/ja/" class="">日本語</a><a href="/ko/" class="">한국어</a>
+          </div>
+        </div>
+        <input type="search" id="search" placeholder="Search skills..." class="search-box">
+      </div>
+    </nav>
+  
     </div>
   </header>
 
@@ -47,7 +64,7 @@
           <h1>Apple Notes</h1>
           <p class="skill-description">Read and manage Apple Notes</p>
           <div class="skill-meta">
-            <span class="category-tag">效率工具</span>
+            <span class="category-tag">Productivity</span>
             <span class="status-tag">
               <span class="status-dot"></span>
               ✅ Active
@@ -78,7 +95,7 @@
               <h2>使用方法</h2>
             </div>
             <div class="usage-content">
-              Use this skill with OpenClaw AI assistant for read and manage apple notes
+              Access your Apple Notes
             </div>
           </section>
 
@@ -90,9 +107,11 @@
             </div>
             <div class="examples-list">
               
-    <div class="example-item"><p>Use with OpenClaw: <code>/apple-notes</code></p></div>
-    <div class="example-item"><p>Run in background for automation</p></div>
-    <div class="example-item"><p>Integrate with other skills</p></div>
+    <div class="example-item"><p>Create new notes</p></div>
+  
+    <div class="example-item"><p>Read existing notes</p></div>
+  
+    <div class="example-item"><p>Organize notes by folder</p></div>
   
             </div>
           </section>

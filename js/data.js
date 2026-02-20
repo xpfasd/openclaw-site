@@ -26,7 +26,7 @@ const SITE_DATA = {
     "coding-agent": {
       name: "Coding Agent",
       icon: "💻",
-      description: "Run Codex CLI, Claude Code, OpenCode via background process",
+      description: "Run Codex CLI, Claude Code, OpenCode via background process for programmatic control",
       category: "ai-ml",
       location: "/opt/homebrew/lib/node_modules/openclaw/skills/coding-agent/",
       usage: "Use for programmatic control of coding agents",
@@ -51,26 +51,21 @@ const SITE_DATA = {
       category: "ai-ml",
       location: "~/.config/nano-banana-pro/"
     },
-    "canvas": {
-      name: "Canvas",
-      icon: "🎨",
-      description: "Control node canvases (present/hide/navigate/eval/snapshot)",
-      category: "media",
-      location: "/opt/homebrew/lib/node_modules/openclaw/skills/canvas/"
+    "github": {
+      name: "GitHub",
+      icon: "🐙",
+      description: "Interact with GitHub using gh CLI - issues, PRs, CI runs",
+      category: "development",
+      location: "/opt/homebrew/lib/node_modules/openclaw/skills/github/",
+      usage: "Manage GitHub issues, pull requests, and workflows"
     },
-    "openai-image-gen": {
-      name: "OpenAI Image Gen",
-      icon: "🖼️",
-      description: "Generate images using OpenAI's image generation API",
-      category: "media",
-      location: "/opt/homebrew/lib/node_modules/openclaw/skills/openai-image-gen/"
-    },
-    "openai-whisper": {
-      name: "OpenAI Whisper",
-      icon: "🎙️",
-      description: "Speech-to-text transcription using Whisper",
-      category: "media",
-      location: "/opt/homebrew/lib/node_modules/openclaw/skills/openai-whisper/"
+    "weather": {
+      name: "Weather",
+      icon: "🌤️",
+      description: "Get current weather and forecasts (no API key required)",
+      category: "utilities",
+      location: "/opt/homebrew/lib/node_modules/openclaw/skills/weather/",
+      usage: "Check weather before going out"
     },
     "discord": {
       name: "Discord",
@@ -79,26 +74,26 @@ const SITE_DATA = {
       category: "communication",
       location: "/opt/homebrew/lib/node_modules/openclaw/skills/discord/"
     },
-    "slack": {
-      name: "Slack",
-      icon: "📱",
-      description: "Send messages to Slack channels",
-      category: "communication",
-      location: "/opt/homebrew/lib/node_modules/openclaw/skills/slack/"
+    "notion": {
+      name: "Notion",
+      icon: "📒",
+      description: "Read and write to Notion pages",
+      category: "productivity",
+      location: "/opt/homebrew/lib/node_modules/openclaw/skills/notion/"
     },
-    "github": {
-      name: "GitHub",
-      icon: "🐙",
-      description: "Interact with GitHub using gh CLI",
-      category: "development",
-      location: "/opt/homebrew/lib/node_modules/openclaw/skills/github/"
+    "spotify-player": {
+      name: "Spotify Player",
+      icon: "🎵",
+      description: "Control Spotify playback - play, pause, skip",
+      category: "multimedia",
+      location: "/opt/homebrew/lib/node_modules/openclaw/skills/spotify-player/"
     },
-    "weather": {
-      name: "Weather",
-      icon: "🌤️",
-      description: "Get current weather and forecasts",
-      category: "utilities",
-      location: "/opt/homebrew/lib/node_modules/openclaw/skills/weather/"
+    "canvas": {
+      name: "Canvas",
+      icon: "🎨",
+      description: "Control node canvases (present/hide/navigate/eval/snapshot)",
+      category: "media",
+      location: "/opt/homebrew/lib/node_modules/openclaw/skills/canvas/"
     },
     "healthcheck": {
       name: "Healthcheck",
@@ -107,19 +102,12 @@ const SITE_DATA = {
       category: "utilities",
       location: "/opt/homebrew/lib/node_modules/openclaw/skills/healthcheck/"
     },
-    "summarize": {
-      name: "Summarize",
-      icon: "📝",
-      description: "Summarize text content",
-      category: "utilities",
-      location: "/opt/homebrew/lib/node_modules/openclaw/skills/summarize/"
-    },
-    "notion": {
-      name: "Notion",
-      icon: "📒",
-      description: "Read and write to Notion pages",
-      category: "productivity",
-      location: "/opt/homebrew/lib/node_modules/openclaw/skills/notion/"
+    "slack": {
+      name: "Slack",
+      icon: "📱",
+      description: "Send messages to Slack channels",
+      category: "communication",
+      location: "/opt/homebrew/lib/node_modules/openclaw/skills/slack/"
     },
     "obsidian": {
       name: "Obsidian",
@@ -128,19 +116,33 @@ const SITE_DATA = {
       category: "productivity",
       location: "/opt/homebrew/lib/node_modules/openclaw/skills/obsidian/"
     },
-    "spotify-player": {
-      name: "Spotify Player",
-      icon: "🎵",
-      description: "Control Spotify playback",
-      category: "multimedia",
-      location: "/opt/homebrew/lib/node_modules/openclaw/skills/spotify-player/"
+    "imsg": {
+      name: "iMessage",
+      icon: "💌",
+      description: "Send messages via iMessage",
+      category: "communication",
+      location: "/opt/homebrew/lib/node_modules/openclaw/skills/imsg/"
     },
-    "video-frames": {
-      name: "Video Frames",
-      icon: "🎬",
-      description: "Extract frames from video files",
-      category: "media",
-      location: "/opt/homebrew/lib/node_modules/openclaw/skills/video-frames/"
+    "things-mac": {
+      name: "Things Mac",
+      icon: "✅",
+      description: "Manage Things todo list",
+      category: "productivity",
+      location: "/opt/homebrew/lib/node_modules/openclaw/skills/things-mac/"
+    },
+    "tmux": {
+      name: "Tmux",
+      icon: "🪟",
+      description: "Control tmux sessions",
+      category: "development",
+      location: "/opt/homebrew/lib/node_modules/openclaw/skills/tmux/"
+    },
+    "summarize": {
+      name: "Summarize",
+      icon: "📝",
+      description: "Summarize text content",
+      category: "utilities",
+      location: "/opt/homebrew/lib/node_modules/openclaw/skills/summarize/"
     }
   },
   

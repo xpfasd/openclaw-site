@@ -10,17 +10,34 @@
 <body>
   <header class="header">
     <div class="container">
-      <nav class="nav">
-        <a href="/" class="logo">
-          <span class="logo-icon">🦞</span>
-          <span>OpenClaw Skills Hub</span>
-        </a>
-        <ul class="nav-links">
-          <li><a href="/">首页</a></li>
-          <li><a href="/skills/" class="active">全部技能</a></li>
-          <li><a href="/categories/">分类</a></li>
-        </ul>
-      </nav>
+      
+    <nav class="nav">
+      <a href="/" class="logo">
+        <span class="logo-icon">🦞</span>
+        <span>OpenClaw Skills Hub</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="/skills/">Skills</a></li>
+        <li><a href="/categories/">Categories</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-switcher">
+          <button class="lang-switcher-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            <span>EN</span>
+          </button>
+          <div class="lang-dropdown">
+            <a href="/" class="lang-active">English</a><a href="/zh/" class="">中文</a><a href="/es/" class="">Español</a><a href="/ja/" class="">日本語</a><a href="/ko/" class="">한국어</a>
+          </div>
+        </div>
+        <input type="search" id="search" placeholder="Search skills..." class="search-box">
+      </div>
+    </nav>
+  
     </div>
   </header>
 
@@ -28,7 +45,7 @@
     <div class="container">
       <!-- Page Header -->
       <div class="page-header">
-        <h1>📚 全部技能</h1>
+        <h1>Skills</h1>
         <p class="page-desc">共 <span id="total-skills" class="highlight">0</span> 个技能</p>
       </div>
 
@@ -44,11 +61,9 @@
         </div>
         <div class="filter-row">
           <select id="category-filter" class="filter-select">
-    <option value="">所有分类</option>
-    <option value="ai-ml">AI & 机器学习</option><option value="media">媒体处理</option><option value="productivity">效率工具</option><option value="communication">通讯社交</option><option value="development">开发工具</option><option value="multimedia">多媒体娱乐</option><option value="iot">智能家居</option><option value="utilities">实用工具</option>
-  
-            <option value="">所有分类</option>
-          </select>
+    <option value="">All Categories</option>
+    <option value="ai-ml">AI & Machine Learning</option><option value="media">Media Processing</option><option value="productivity">Productivity</option><option value="communication">Communication</option><option value="development">Development</option><option value="multimedia">Multimedia</option><option value="iot">Smart Home</option><option value="utilities">Utilities</option>
+  </select>
           <select id="sort-filter" class="filter-select">
             <option value="name">按名称排序</option>
             <option value="category">按分类排序</option>
@@ -75,289 +90,289 @@
       <!-- Skills Grid -->
       <div class="skills-grid-large" id="skills-grid">
         
-      <a href="/skills/nano-banana-pro/" class="skill-card">
+      <a href="/skills/coding-agent/" class="skill-card" data-name="Coding Agent" data-description="Run Codex CLI, Claude Code, OpenCode via background process for programmatic control" data-category="ai-ml">
         <div class="skill-card-header">
-          <span class="skill-icon">🍌</span>
-          <h3>Nano Banana Pro</h3>
+          <span class="skill-icon">💻</span>
+          <h3>Coding Agent</h3>
         </div>
-        <p>Advanced AI prompts and generation tools</p>
+        <p>Run Codex CLI, Claude Code, OpenCode via background process for programmatic control</p>
         <div class="skill-tags">
-          <span class="tag">AI & 机器学习</span>
+          <span class="tag">AI & Machine Learning</span>
         </div>
       </a>
     
-      <a href="/skills/gemini/" class="skill-card">
+      <a href="/skills/gemini/" class="skill-card" data-name="Gemini CLI" data-description="Gemini CLI for one-shot Q&A, summaries, and generation" data-category="ai-ml">
         <div class="skill-card-header">
           <span class="skill-icon">✨</span>
           <h3>Gemini CLI</h3>
         </div>
         <p>Gemini CLI for one-shot Q&A, summaries, and generation</p>
         <div class="skill-tags">
-          <span class="tag">AI & 机器学习</span>
+          <span class="tag">AI & Machine Learning</span>
         </div>
       </a>
     
-      <a href="/skills/coding-agent/" class="skill-card">
+      <a href="/skills/nano-banana-pro/" class="skill-card" data-name="Nano Banana Pro" data-description="Advanced AI prompts and generation tools" data-category="ai-ml">
         <div class="skill-card-header">
-          <span class="skill-icon">💻</span>
-          <h3>Coding Agent</h3>
+          <span class="skill-icon">🍌</span>
+          <h3>Nano Banana Pro</h3>
         </div>
-        <p>Run Codex CLI, Claude Code, OpenCode via background process</p>
+        <p>Advanced AI prompts and generation tools</p>
         <div class="skill-tags">
-          <span class="tag">AI & 机器学习</span>
+          <span class="tag">AI & Machine Learning</span>
         </div>
       </a>
     
-      <a href="/skills/canvas/" class="skill-card">
+      <a href="/skills/canvas/" class="skill-card" data-name="Canvas" data-description="Control node canvases - present, hide, navigate, eval, snapshot" data-category="media">
         <div class="skill-card-header">
           <span class="skill-icon">🎨</span>
           <h3>Canvas</h3>
         </div>
-        <p>Control node canvases (present/hide/navigate/eval/snapshot)</p>
+        <p>Control node canvases - present, hide, navigate, eval, snapshot</p>
         <div class="skill-tags">
-          <span class="tag">媒体处理</span>
+          <span class="tag">Media Processing</span>
         </div>
       </a>
     
-      <a href="/skills/openai-image-gen/" class="skill-card">
+      <a href="/skills/openai-image-gen/" class="skill-card" data-name="OpenAI Image Gen" data-description="Generate images using OpenAI's image generation API" data-category="media">
         <div class="skill-card-header">
           <span class="skill-icon">🖼️</span>
           <h3>OpenAI Image Gen</h3>
         </div>
         <p>Generate images using OpenAI's image generation API</p>
         <div class="skill-tags">
-          <span class="tag">媒体处理</span>
+          <span class="tag">Media Processing</span>
         </div>
       </a>
     
-      <a href="/skills/openai-whisper/" class="skill-card">
+      <a href="/skills/openai-whisper/" class="skill-card" data-name="OpenAI Whisper" data-description="Speech-to-text transcription using Whisper" data-category="media">
         <div class="skill-card-header">
           <span class="skill-icon">🎙️</span>
           <h3>OpenAI Whisper</h3>
         </div>
         <p>Speech-to-text transcription using Whisper</p>
         <div class="skill-tags">
-          <span class="tag">媒体处理</span>
+          <span class="tag">Media Processing</span>
         </div>
       </a>
     
-      <a href="/skills/video-frames/" class="skill-card">
+      <a href="/skills/video-frames/" class="skill-card" data-name="Video Frames" data-description="Extract frames from video files" data-category="media">
         <div class="skill-card-header">
           <span class="skill-icon">🎬</span>
           <h3>Video Frames</h3>
         </div>
         <p>Extract frames from video files</p>
         <div class="skill-tags">
-          <span class="tag">媒体处理</span>
+          <span class="tag">Media Processing</span>
         </div>
       </a>
     
-      <a href="/skills/notion/" class="skill-card">
+      <a href="/skills/notion/" class="skill-card" data-name="Notion" data-description="Read and write to Notion pages" data-category="productivity">
         <div class="skill-card-header">
           <span class="skill-icon">📒</span>
           <h3>Notion</h3>
         </div>
         <p>Read and write to Notion pages</p>
         <div class="skill-tags">
-          <span class="tag">效率工具</span>
+          <span class="tag">Productivity</span>
         </div>
       </a>
     
-      <a href="/skills/obsidian/" class="skill-card">
+      <a href="/skills/obsidian/" class="skill-card" data-name="Obsidian" data-description="Read and manage Obsidian vault" data-category="productivity">
         <div class="skill-card-header">
           <span class="skill-icon">📔</span>
           <h3>Obsidian</h3>
         </div>
         <p>Read and manage Obsidian vault</p>
         <div class="skill-tags">
-          <span class="tag">效率工具</span>
+          <span class="tag">Productivity</span>
         </div>
       </a>
     
-      <a href="/skills/apple-notes/" class="skill-card">
+      <a href="/skills/apple-notes/" class="skill-card" data-name="Apple Notes" data-description="Read and manage Apple Notes" data-category="productivity">
         <div class="skill-card-header">
           <span class="skill-icon">📝</span>
           <h3>Apple Notes</h3>
         </div>
         <p>Read and manage Apple Notes</p>
         <div class="skill-tags">
-          <span class="tag">效率工具</span>
+          <span class="tag">Productivity</span>
         </div>
       </a>
     
-      <a href="/skills/things-mac/" class="skill-card">
+      <a href="/skills/things-mac/" class="skill-card" data-name="Things Mac" data-description="Manage tasks in Things 3" data-category="productivity">
         <div class="skill-card-header">
           <span class="skill-icon">✅</span>
           <h3>Things Mac</h3>
         </div>
         <p>Manage tasks in Things 3</p>
         <div class="skill-tags">
-          <span class="tag">效率工具</span>
+          <span class="tag">Productivity</span>
         </div>
       </a>
     
-      <a href="/skills/discord/" class="skill-card">
+      <a href="/skills/discord/" class="skill-card" data-name="Discord" data-description="Send messages and manage Discord channels" data-category="communication">
         <div class="skill-card-header">
           <span class="skill-icon">💬</span>
           <h3>Discord</h3>
         </div>
         <p>Send messages and manage Discord channels</p>
         <div class="skill-tags">
-          <span class="tag">通讯社交</span>
+          <span class="tag">Communication</span>
         </div>
       </a>
     
-      <a href="/skills/slack/" class="skill-card">
+      <a href="/skills/slack/" class="skill-card" data-name="Slack" data-description="Send messages to Slack channels" data-category="communication">
         <div class="skill-card-header">
           <span class="skill-icon">📱</span>
           <h3>Slack</h3>
         </div>
         <p>Send messages to Slack channels</p>
         <div class="skill-tags">
-          <span class="tag">通讯社交</span>
+          <span class="tag">Communication</span>
         </div>
       </a>
     
-      <a href="/skills/imsg/" class="skill-card">
+      <a href="/skills/imsg/" class="skill-card" data-name="iMessage" data-description="Send iMessages via macOS" data-category="communication">
         <div class="skill-card-header">
           <span class="skill-icon">💭</span>
           <h3>iMessage</h3>
         </div>
         <p>Send iMessages via macOS</p>
         <div class="skill-tags">
-          <span class="tag">通讯社交</span>
+          <span class="tag">Communication</span>
         </div>
       </a>
     
-      <a href="/skills/bird/" class="skill-card">
+      <a href="/skills/bird/" class="skill-card" data-name="Bird" data-description="Twitter/X client" data-category="communication">
         <div class="skill-card-header">
           <span class="skill-icon">🐦</span>
           <h3>Bird</h3>
         </div>
         <p>Twitter/X client</p>
         <div class="skill-tags">
-          <span class="tag">通讯社交</span>
+          <span class="tag">Communication</span>
         </div>
       </a>
     
-      <a href="/skills/github/" class="skill-card">
+      <a href="/skills/github/" class="skill-card" data-name="GitHub" data-description="Interact with GitHub using gh CLI - issues, PRs, CI runs" data-category="development">
         <div class="skill-card-header">
           <span class="skill-icon">🐙</span>
           <h3>GitHub</h3>
         </div>
-        <p>Interact with GitHub using gh CLI</p>
+        <p>Interact with GitHub using gh CLI - issues, PRs, CI runs</p>
         <div class="skill-tags">
-          <span class="tag">开发工具</span>
+          <span class="tag">Development</span>
         </div>
       </a>
     
-      <a href="/skills/tmux/" class="skill-card">
+      <a href="/skills/tmux/" class="skill-card" data-name="Tmux" data-description="Control tmux sessions" data-category="development">
         <div class="skill-card-header">
           <span class="skill-icon">🖥️</span>
           <h3>Tmux</h3>
         </div>
         <p>Control tmux sessions</p>
         <div class="skill-tags">
-          <span class="tag">开发工具</span>
+          <span class="tag">Development</span>
         </div>
       </a>
     
-      <a href="/skills/skill-creator/" class="skill-card">
+      <a href="/skills/skill-creator/" class="skill-card" data-name="Skill Creator" data-description="Create or update AgentSkills" data-category="development">
         <div class="skill-card-header">
           <span class="skill-icon">🛠️</span>
           <h3>Skill Creator</h3>
         </div>
         <p>Create or update AgentSkills</p>
         <div class="skill-tags">
-          <span class="tag">开发工具</span>
+          <span class="tag">Development</span>
         </div>
       </a>
     
-      <a href="/skills/spotify-player/" class="skill-card">
+      <a href="/skills/spotify-player/" class="skill-card" data-name="Spotify Player" data-description="Control Spotify playback - play, pause, skip" data-category="multimedia">
         <div class="skill-card-header">
           <span class="skill-icon">🎵</span>
           <h3>Spotify Player</h3>
         </div>
-        <p>Control Spotify playback</p>
+        <p>Control Spotify playback - play, pause, skip</p>
         <div class="skill-tags">
-          <span class="tag">多媒体娱乐</span>
+          <span class="tag">Multimedia</span>
         </div>
       </a>
     
-      <a href="/skills/songsee/" class="skill-card">
+      <a href="/skills/songsee/" class="skill-card" data-name="SongSee" data-description="Song recognition and lyrics" data-category="multimedia">
         <div class="skill-card-header">
           <span class="skill-icon">🎶</span>
           <h3>SongSee</h3>
         </div>
         <p>Song recognition and lyrics</p>
         <div class="skill-tags">
-          <span class="tag">多媒体娱乐</span>
+          <span class="tag">Multimedia</span>
         </div>
       </a>
     
-      <a href="/skills/gifgrep/" class="skill-card">
+      <a href="/skills/gifgrep/" class="skill-card" data-name="Gifgrep" data-description="Search and share GIFs" data-category="multimedia">
         <div class="skill-card-header">
-          <span class="skill-icon"> GIF</span>
+          <span class="skill-icon">🎞️</span>
           <h3>Gifgrep</h3>
         </div>
         <p>Search and share GIFs</p>
         <div class="skill-tags">
-          <span class="tag">多媒体娱乐</span>
+          <span class="tag">Multimedia</span>
         </div>
       </a>
     
-      <a href="/skills/openhue/" class="skill-card">
+      <a href="/skills/openhue/" class="skill-card" data-name="OpenHue" data-description="Control Philips Hue lights" data-category="iot">
         <div class="skill-card-header">
           <span class="skill-icon">💡</span>
           <h3>OpenHue</h3>
         </div>
         <p>Control Philips Hue lights</p>
         <div class="skill-tags">
-          <span class="tag">智能家居</span>
+          <span class="tag">Smart Home</span>
         </div>
       </a>
     
-      <a href="/skills/goplaces/" class="skill-card">
+      <a href="/skills/goplaces/" class="skill-card" data-name="Go Places" data-description="Local places search" data-category="iot">
         <div class="skill-card-header">
           <span class="skill-icon">📍</span>
           <h3>Go Places</h3>
         </div>
         <p>Local places search</p>
         <div class="skill-tags">
-          <span class="tag">智能家居</span>
+          <span class="tag">Smart Home</span>
         </div>
       </a>
     
-      <a href="/skills/weather/" class="skill-card">
+      <a href="/skills/weather/" class="skill-card" data-name="Weather" data-description="Get current weather and forecasts (no API key required)" data-category="utilities">
         <div class="skill-card-header">
           <span class="skill-icon">🌤️</span>
           <h3>Weather</h3>
         </div>
-        <p>Get current weather and forecasts</p>
+        <p>Get current weather and forecasts (no API key required)</p>
         <div class="skill-tags">
-          <span class="tag">实用工具</span>
+          <span class="tag">Utilities</span>
         </div>
       </a>
     
-      <a href="/skills/healthcheck/" class="skill-card">
+      <a href="/skills/healthcheck/" class="skill-card" data-name="Healthcheck" data-description="Host security hardening and risk assessment" data-category="utilities">
         <div class="skill-card-header">
           <span class="skill-icon">🏥</span>
           <h3>Healthcheck</h3>
         </div>
         <p>Host security hardening and risk assessment</p>
         <div class="skill-tags">
-          <span class="tag">实用工具</span>
+          <span class="tag">Utilities</span>
         </div>
       </a>
     
-      <a href="/skills/summarize/" class="skill-card">
+      <a href="/skills/summarize/" class="skill-card" data-name="Summarize" data-description="Summarize text content" data-category="utilities">
         <div class="skill-card-header">
           <span class="skill-icon">📝</span>
           <h3>Summarize</h3>
         </div>
         <p>Summarize text content</p>
         <div class="skill-tags">
-          <span class="tag">实用工具</span>
+          <span class="tag">Utilities</span>
         </div>
       </a>
     
